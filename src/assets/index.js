@@ -12,8 +12,8 @@ import hr from "./achievement/HR.jpg";
 import cp from "./achievement/Certiport.jpg";
 import fcc from "./achievement/free_code_camp.jpg";
 
-import novalearn from "./project/novalearn.png";
-import ponggame from "./project/ponggame.png";
+import launchpad from "./project/launchpad.png";
+import finsight from "./project/finsight.png";
 import portfolio from "./project/portfolio.png";
 
 import code from "./badge/code.svg";
@@ -22,7 +22,7 @@ import designs from "./badge/designs.svg";
 import ideas from "./badge/ideas.svg";
 
 export {
-  ponggame,
+  finsight,
   portfolio,
   logo,
   backend,
@@ -36,7 +36,7 @@ export {
   hr,
   cp,
   fcc,
-  novalearn,
+  launchpad,
   ideas,
   concepts,
   designs,

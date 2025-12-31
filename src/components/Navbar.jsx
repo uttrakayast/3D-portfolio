@@ -109,9 +109,8 @@ const Navbar = () => {
 
   return (
     <motion.header
-      className={`z-30 fixed top-0 left-0 w-full transition-colors duration-500 ease-in  ${
-        scrolled ? "backdrop-blur-xl" : ""
-      } `}
+      className={`z-30 fixed top-0 left-0 w-full transition-colors duration-500 ease-in  ${scrolled ? "backdrop-blur-xl" : ""
+        } `}
       style={{
         background: scrolled ? "rgba(10,10,20,0.8)" : "transparent",
       }}
@@ -119,10 +118,14 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="flex items-center justify-between max-w-8xl my-2 mx-4 relative">
+      <div className="flex items-center justify-between max-w-8xl mx-4 relative h-24">
         <a href="#hero" className="flex mx-6 items-center justify-center">
           <span className="text-md">
-            <img src={logo} alt="logo" className="h-16 object-contain" />
+<img
+  src={logo}
+  alt="logo"
+  className="h-25 md:h-44 object-contain"
+ />
           </span>
         </a>
         <button

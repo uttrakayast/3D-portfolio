@@ -315,7 +315,7 @@ const SkillKeyboard = () => {
           <Spline
             ref={splineContainer}
             onLoad={(app) => setSplineApp(app)}
-            scene="/assets/skills-keyboard.spline"
+            scene="https://prod.spline.design/27qFewXjt-WrtoiQ/scene.splinecode"
           />
         </Suspense>
       </div>

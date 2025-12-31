@@ -47,9 +47,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a Jayant Sunil Potdar. A Full Stack Web developer with experience in
+        I'm Uttra. A Frontend developer with experience in
         HTML, CSS, and JavaScript, and expertise in frameworks like React, and
-        Bootstrap. I'm a quick learner and to create efficient, scalable, and
+        Next.js. I'm a quick learner and to create efficient, scalable, and
         user-friendly solutions that solve real-world problems. Let's work
         together to bring our ideas to life!
       </motion.p>
@@ -57,7 +57,7 @@ const About = () => {
         className="mt-10 px-6 py-3 text-white bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-md shadow-md hover:bg-gradient-to-r hover:from-cyan-600 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1JXxclNaQDOGD9BauEy1jS9XDYk5QsaMa/view?usp=sharing",
+            "https://drive.google.com/file/d/1iIHB0taFW5SMYE5hgMoXko6ys55lpTUk/view",
             "_blank"
           )
         }

@@ -5,26 +5,15 @@ export const SkillNames = {
   HTML: "html",
   CSS: "css",
   REACT: "react",
-  VUE: "vue",
   NEXTJS: "nextjs",
   TAILWIND: "tailwind",
   NODEJS: "nodejs",
-  EXPRESS: "express",
-  POSTGRES: "postgres",
-  MONGODB: "mongodb",
   GIT: "git",
   GITHUB: "github",
-  PRETTIER: "prettier",
-  NPM: "npm",
   FIREBASE: "firebase",
-  WORDPRESS: "wordpress",
-  LINUX: "linux",
-  DOCKER: "docker",
-  NGINX: "nginx",
-  AWS: "aws",
-  VIM: "vim",
   VERCEL: "vercel",
 };
+
 
 // Skill type (for reference)
 // id: number, name: string, label: string, shortDescription: string, color: string, icon: string
