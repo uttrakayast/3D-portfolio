@@ -254,18 +254,23 @@ const SkillKeyboard = () => {
   };
 
   // Set up initial GSAP animations for the keyboard
-  const handleGsapAnimations = () => {
-    if (!splineApp) return;
-    const kbd = splineApp.findObjectByName("keyboard");
-    if (!kbd || !splineContainer.current) return;
-    // Set initial scale and position
-    gsap.set(kbd.scale, { ...keyboardStates("hero").scale });
-    gsap.set(kbd.position, { ...keyboardStates("hero").position });
-    gsap.timeline({
-      onStart: () => setActiveSection("skills"),
-    });
-    // You can add scroll-based triggers here if you want to animate between sections
-  };
+ const handleGsapAnimations = () => {
+  if (!splineApp) return;
+
+  const kbd = splineApp.findObjectByName("keyboard");
+  if (!kbd) return;
+
+  if (isMobile) {
+    // 📱 MOBILE — force right shift here (THIS ACTUALLY WORKS)
+    gsap.set(kbd.scale, { x: 0.26, y: 0.26, z: 0.26 });
+    gsap.set(kbd.position, { x: 95, y: 0, z: 0 }); // ✅ RIGHT MOVE
+    gsap.set(kbd.rotation, { x: 0, y: 0, z: 0 });
+  } else {
+    // 🖥 DESKTOP — unchanged
+    gsap.set(kbd.scale, keyboardStates("hero").scale);
+    gsap.set(kbd.position, keyboardStates("hero").position);
+  }
+};
 
   // Render the 3D keyboard section
   return (
@@ -274,7 +279,7 @@ const SkillKeyboard = () => {
       id="skills"
       style={{
         width: "100%",
-        height: "100vh",
+        height: "90vh",
         margin: "0 auto",
         display: "flex",
         flexDirection: "column",

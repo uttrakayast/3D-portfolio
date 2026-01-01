@@ -10,11 +10,11 @@ const NAV_LINKS = [
     href: "#about",
     img: "/assets/nav-link-previews/about.png",
   },
-  {
-    title: "achievements",
-    href: "#achievements",
-    img: "/assets/nav-link-previews/achievements.png",
-  },
+  // {
+  //   title: "achievements",
+  //   href: "#achievements",
+  //   img: "/assets/nav-link-previews/achievements.png",
+  // },
   {
     title: "skills",
     href: "#skills",
@@ -25,11 +25,11 @@ const NAV_LINKS = [
     href: "#projects",
     img: "/assets/nav-link-previews/projects.png",
   },
-  {
-    title: "testimonials",
-    href: "#testimonials",
-    img: "/assets/nav-link-previews/testimonials.png",
-  },
+  // {
+  //   title: "testimonials",
+  //   href: "#testimonials",
+  //   img: "/assets/nav-link-previews/testimonials.png",
+  // },
   {
     title: "contact",
     href: "#contact",
@@ -118,8 +118,8 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="flex items-center justify-between max-w-8xl mx-4 relative h-24">
-        <a href="#hero" className="flex mx-6 items-center justify-center">
+      <div className="flex items-center  justify-between max-w-8xl mx-4 relative h-24">
+        <a href="#hero" className="flex mx-1  items-center justify-center">
           <span className="text-md">
 <img
   src={logo}
